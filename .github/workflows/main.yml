@@ -2,7 +2,7 @@ name: Publish rihlah to Cpanel
 on:
   push:
     branches: 
-      - main
+      - master
   pull_request:
     branches: [ main ]
 jobs:
