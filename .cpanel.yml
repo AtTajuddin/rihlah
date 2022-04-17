@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/theit/public_html/order/ # Add /<app_folder> if required
+    - /bin/cp * $DEPLOYPATH
