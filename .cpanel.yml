@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/theit/public_html/order/
+    - /home/theit/order/cp -R public/* $DEPLOYPATH

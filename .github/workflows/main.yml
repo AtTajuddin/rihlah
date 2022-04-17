@@ -1,0 +1,27 @@
+name: Publish rihlah to Cpanel
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: [ main ]
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action  
+  #web-deploy:
+  # name: Deploying...
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        #ftp-server: ${{ secrets.FTP_SERVER }}
+        #ftp-username: ${{ secrets.FTP_USERNAME }}
+        #ftp-password: ${{ secrets.FTP_PASSWORD}}      
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME}}
+        password: ${{ secrets.FTP_PASSWORD}}  
