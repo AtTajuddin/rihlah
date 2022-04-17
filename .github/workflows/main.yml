@@ -1,4 +1,4 @@
-name: Publish Laratest to Cpanel
+name: Publish rihlah to Cpanel
 on:
   push:
     branches: 
