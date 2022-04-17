@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/theit/public_html/order/
     - cd ..
     - cd /home/theit/order
-    - /home/theit/order/cp -R public/* $DEPLOYPATH
+    - cp -R public/* $DEPLOYPATH
